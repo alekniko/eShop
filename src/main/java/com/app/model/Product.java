@@ -4,12 +4,22 @@ import java.math.BigDecimal;
 
 public class Product {
     String productName;
+    String vendorId;
     BigDecimal purchasePrice;
     BigDecimal sellingPrice;
     double productHeight;
     double productLength;
     double productWidth;
     double productWeight;
+
+    public String getVendorId() {
+        return vendorId;
+    }
+
+    public void setVendorId(String vendorId) {
+        this.vendorId = vendorId;
+    }
+
     int productCountOnStock;
 
     public String getProductName() {

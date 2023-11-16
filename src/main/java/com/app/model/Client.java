@@ -1,19 +1,38 @@
 package com.app.model;
 
-public class User {
+public class Client {
     String firstName;
     String lastName;
     int age;
     String email;
     String phoneNumber;
-    long userId;
+    long clientId;
+    long addressId;
+    String password;
 
-    public long getUserId() {
-        return userId;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public long getAddressId() {
+        return addressId;
+    }
+
+    public void setAddressId(long addressId) {
+        this.addressId = addressId;
+    }
+
+    public long getClientId() {
+
+        return clientId;
+    }
+
+    public void setClientId(long userId) {
+        this.clientId = userId;
     }
 
     public String getFirstName() {

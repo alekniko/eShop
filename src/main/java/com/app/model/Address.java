@@ -1,6 +1,7 @@
 package com.app.model;
 
-public class ClientAddress {
+public class Address {
+    long id;
     String country;
     String city;
     String street;
@@ -9,6 +10,14 @@ public class ClientAddress {
     int floor;
     String postCode;
     String doorPin;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getCountry() {
         return country;

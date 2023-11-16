@@ -3,7 +3,16 @@ package com.app.model;
 public class Vendor {
     String vendorName;
     String vendorBankAccount;
-    String vendorAddress;
+    String product;
+
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
     long vendorId;
 
     public String getVendorName() {
@@ -20,14 +29,6 @@ public class Vendor {
 
     public void setVendorBankAccount(String vendorBankAccount) {
         this.vendorBankAccount = vendorBankAccount;
-    }
-
-    public String getVendorAddress() {
-        return vendorAddress;
-    }
-
-    public void setVendorAddress(String vendorAddress) {
-        this.vendorAddress = vendorAddress;
     }
 
     public long getVendorId() {
