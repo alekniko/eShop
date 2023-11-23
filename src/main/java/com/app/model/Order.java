@@ -1,9 +1,13 @@
 package com.app.model;
 
+import java.time.LocalDateTime;
+
 public class Order {
-    long id;
-    long userId;
-    long productId;
+    private long id;
+    private long clientId;
+    private long productId;
+    private LocalDateTime timeStamp;
+    private long paymentMethodId;
 
     public long getId() {
         return id;
@@ -13,12 +17,12 @@ public class Order {
         this.id = id;
     }
 
-    public long getUserId() {
-        return userId;
+    public long getClientId() {
+        return clientId;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setClientId(long clientId) {
+        this.clientId = clientId;
     }
 
     public long getProductId() {
@@ -27,5 +31,21 @@ public class Order {
 
     public void setProductId(long productId) {
         this.productId = productId;
+    }
+
+    public LocalDateTime getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(LocalDateTime timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+
+    public long getPaymentMethodId() {
+        return paymentMethodId;
+    }
+
+    public void setPaymentMethodId(long paymentMethodId) {
+        this.paymentMethodId = paymentMethodId;
     }
 }

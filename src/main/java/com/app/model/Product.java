@@ -3,14 +3,32 @@ package com.app.model;
 import java.math.BigDecimal;
 
 public class Product {
-    String productName;
-    String vendorId;
-    BigDecimal purchasePrice;
-    BigDecimal sellingPrice;
-    double productHeight;
-    double productLength;
-    double productWidth;
-    double productWeight;
+    private long id;
+    private String name;
+    private String vendorId;
+    private BigDecimal purchasePrice;
+    private BigDecimal sellingPrice;
+    private int itemAvailable;
+    private double productWidth;
+    private double productHeight;
+    private double productLength;
+    private double productWeight;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getVendorId() {
         return vendorId;
@@ -18,16 +36,6 @@ public class Product {
 
     public void setVendorId(String vendorId) {
         this.vendorId = vendorId;
-    }
-
-    int productCountOnStock;
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
     }
 
     public BigDecimal getPurchasePrice() {
@@ -46,6 +54,22 @@ public class Product {
         this.sellingPrice = sellingPrice;
     }
 
+    public int getItemAvailable() {
+        return itemAvailable;
+    }
+
+    public void setItemAvailable(int itemAvailable) {
+        this.itemAvailable = itemAvailable;
+    }
+
+    public double getProductWidth() {
+        return productWidth;
+    }
+
+    public void setProductWidth(double productWidth) {
+        this.productWidth = productWidth;
+    }
+
     public double getProductHeight() {
         return productHeight;
     }
@@ -62,27 +86,11 @@ public class Product {
         this.productLength = productLength;
     }
 
-    public double getProductWidth() {
-        return productWidth;
-    }
-
-    public void setProductWidth(double productWidth) {
-        this.productWidth = productWidth;
-    }
-
     public double getProductWeight() {
         return productWeight;
     }
 
     public void setProductWeight(double productWeight) {
         this.productWeight = productWeight;
-    }
-
-    public int getProductCountOnStock() {
-        return productCountOnStock;
-    }
-
-    public void setProductCountOnStock(int productCountOnStock) {
-        this.productCountOnStock = productCountOnStock;
     }
 }

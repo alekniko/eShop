@@ -1,21 +1,37 @@
 package com.app.model;
 
 public class Client {
-    String firstName;
-    String lastName;
-    int age;
-    String email;
-    String phoneNumber;
-    long clientId;
-    long addressId;
-    String password;
+    private long id;
+    private String name;
+    private String surname;
+    private long addressId;
+    private String email;
+    private String phoneNumber;
+    private int age;
+    private String password;
 
-    public String getPassword() {
-        return password;
+    public long getId() {
+        return id;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public long getAddressId() {
@@ -24,39 +40,6 @@ public class Client {
 
     public void setAddressId(long addressId) {
         this.addressId = addressId;
-    }
-
-    public long getClientId() {
-
-        return clientId;
-    }
-
-    public void setClientId(long userId) {
-        this.clientId = userId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getEmail() {
@@ -73,5 +56,21 @@ public class Client {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

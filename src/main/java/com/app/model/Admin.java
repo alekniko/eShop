@@ -1,11 +1,11 @@
 package com.app.model;
 
 public class Admin {
-    int adminId;
-    String userName;
-    String password;
+    private long adminId;
+    private String userName;
+    private String password;
 
-    public int getAdminId() {
+    public long getAdminId() {
         return adminId;
     }
 

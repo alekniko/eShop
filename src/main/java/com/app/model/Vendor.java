@@ -1,9 +1,27 @@
 package com.app.model;
 
 public class Vendor {
-    String vendorName;
-    String vendorBankAccount;
-    String product;
+    private long id;
+    private String name;
+    private String product;
+    private String vendorBankAccount;
+    private long addressId;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getProduct() {
         return product;
@@ -11,16 +29,6 @@ public class Vendor {
 
     public void setProduct(String product) {
         this.product = product;
-    }
-
-    long vendorId;
-
-    public String getVendorName() {
-        return vendorName;
-    }
-
-    public void setVendorName(String vendorName) {
-        this.vendorName = vendorName;
     }
 
     public String getVendorBankAccount() {
@@ -31,11 +39,11 @@ public class Vendor {
         this.vendorBankAccount = vendorBankAccount;
     }
 
-    public long getVendorId() {
-        return vendorId;
+    public long getAddressId() {
+        return addressId;
     }
 
-    public void setVendorId(long vendorId) {
-        this.vendorId = vendorId;
+    public void setAddressId(long addressId) {
+        this.addressId = addressId;
     }
 }

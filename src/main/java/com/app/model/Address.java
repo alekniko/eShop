@@ -2,14 +2,14 @@ package com.app.model;
 
 public class Address {
     long id;
-    String country;
-    String city;
-    String street;
-    String homeNr;
-    String apartmentNr;
-    int floor;
-    String postCode;
-    String doorPin;
+    private String country;
+    private long cityId;
+    private String street;
+    private String homeNr;
+    private String apartmentNr;
+    private String doorPin;
+    private int floor;
+    private String postCode;
 
     public long getId() {
         return id;
@@ -27,12 +27,12 @@ public class Address {
         this.country = country;
     }
 
-    public String getCity() {
-        return city;
+    public long getCityId() {
+        return cityId;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setCityId(long cityId) {
+        this.cityId = cityId;
     }
 
     public String getStreet() {
@@ -59,6 +59,14 @@ public class Address {
         this.apartmentNr = apartmentNr;
     }
 
+    public String getDoorPin() {
+        return doorPin;
+    }
+
+    public void setDoorPin(String doorPin) {
+        this.doorPin = doorPin;
+    }
+
     public int getFloor() {
         return floor;
     }
@@ -73,13 +81,5 @@ public class Address {
 
     public void setPostCode(String postCode) {
         this.postCode = postCode;
-    }
-
-    public String getDoorPin() {
-        return doorPin;
-    }
-
-    public void setDoorPin(String doorPin) {
-        this.doorPin = doorPin;
     }
 }
